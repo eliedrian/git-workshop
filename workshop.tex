@@ -112,4 +112,72 @@
   \texttt{git rm}
 \end{frame}
 
+\begin{frame}{Viewing history}
+  \texttt{git log}
+\end{frame}
+
+\begin{frame}{Redo commit}
+  \texttt{git commit --amend}
+\end{frame}
+
+\begin{frame}{Unstage}
+  \texttt{git restore --staged <filename>}
+\end{frame}
+
+\begin{frame}{Restore}
+  \texttt{git restore <filename>}
+\end{frame}
+
+\begin{frame}{Remotes}
+  \texttt{git remote}
+
+  \texttt{git remote add <name> <url>}
+\end{frame}
+
+\begin{frame}{Push and pull}
+  \texttt{git fetch <remote>}
+
+  \texttt{git push <remote> <branch>}
+\end{frame}
+
+\begin{frame}{Branches}
+  \texttt{git branch <name>}
+\end{frame}
+
+\begin{frame}{Switch branches}
+  \texttt{git checkout <branch>}
+\end{frame}
+
+\begin{frame}{Branching workflow}
+  \begin{itemize}
+    \item main
+    \item develop
+    \item feature
+    \item hotfix
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Branching workflow}
+  \texttt{git checkout -d <name>}
+
+  Work...
+  
+  \texttt{git checkout master}
+
+  \texttt{git merge <featurebranch>}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \includegraphics[height=\textheight]{why-fix-conflicts}
+\end{frame}
+
+\begin{frame}{Merge conflicts}
+  \texttt{git merge <branch>}
+
+  Fix conflicts...
+
+  \texttt{git commit}
+\end{frame}
+
 \end{document}

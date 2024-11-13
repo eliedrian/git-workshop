@@ -1,0 +1,115 @@
+\documentclass[17pt]{beamer}
+
+\mode<presentation>
+
+\usetheme{moloch}
+
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\title{Git}
+\subtitle{in practice}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \centering
+  \includegraphics[height=\textheight]{git-meme}
+\end{frame}
+
+\begin{frame}{Install \texttt{git}}
+  \url{https://gitforwindows.org/}
+
+  \url{https://git-scm.com/downloads}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \includegraphics[height=\textheight]{git-for-windows}
+\end{frame}
+
+\begin{frame}{First-time setup}
+  \begin{itemize}
+    \item hu u?
+    \item text editor
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{hu u?}
+  \texttt{git config --global user.name <your-name>}
+
+  \texttt{git config --global user.email <your-email>}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \includegraphics[height=\textheight]{vscode-meme}
+\end{frame}
+
+\begin{frame}{VSCode}
+  \texttt{git config --global core.editor "code --wait"}
+\end{frame}
+
+\begin{frame}{Verify}
+  \texttt{git config --list}
+\end{frame}
+
+\begin{frame}{In or out?}
+  \begin{itemize}
+    \item tracked
+    \item untracked
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Tracked file states}
+  \begin{itemize}
+    \item modified
+    \item staged
+    \item committed
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Create a repo}
+  In project folder:
+
+  \texttt{git init}
+\end{frame}
+
+\begin{frame}{Cloning a repo}
+  \texttt{git clone <repo-url>}
+\end{frame}
+
+\begin{frame}{Status}
+  \texttt{git status}
+\end{frame}
+
+\begin{frame}{Track}
+  Stage modifications:
+
+  \texttt{git add <filename>}
+\end{frame}
+
+\begin{frame}{Commit}
+  \texttt{git commit}
+
+  \texttt{git commit -m <message>}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \includegraphics[height=\textheight]{commit-meme}
+\end{frame}
+
+\begin{frame}{Diff}
+  \texttt{git diff}
+
+  \texttt{git diff --staged}
+\end{frame}
+
+\begin{frame}{Delete}
+  \texttt{git rm}
+\end{frame}
+
+\end{document}
